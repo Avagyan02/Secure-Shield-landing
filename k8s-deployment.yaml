@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: secure-shield-landing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: secure-shield-landing
+  template:
+    metadata:
+      labels:
+        app: secure-shield-landing
+    spec:
+      containers:
+        - name: secure-shield
+          image: yourname/secure-shield:latest
+          ports:
+            - containerPort: 80
