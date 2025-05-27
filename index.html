@@ -19,6 +19,42 @@
       text-align: center;
     }
 
+  button {
+    height: 54px;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+  }
+
+  #modalContent {
+    background: #2c2c2c;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    text-align: left;
+  }
+
+  #closeModal {
+    background-color: #d32f2f;
+    margin-top: 20px;
+  }
+
     .container {
       max-width: 600px;
       padding: 20px;
@@ -64,6 +100,24 @@
     <h1>SecureShield Antivirus</h1>
     <p>Advanced protection for your Windows PC.<br/> Real-time scanning. Firewall control. Adware blocking.</p>
     <a class="btn" href="https://drive.google.com/uc?export=download&id=1qkExrRs6_p9RLXEItYrWzrpZ3IFtMSiO" download>Download for Windows</a>
+
+    <button onclick="document.getElementById('modal').style.display = 'flex'">How to Use</button>
+
+    <div id="modal">
+      <div id="modalContent">
+        <h2 class="btn">How to Use Secure Shield</h2>
+        <ul>
+          <li>1️⃣ Download the application using the button above</li>
+          <li>2️⃣ If Windows Defender blocks it, go to “Windows Security > Virus & Threat Protection > Protection history” and allow the file</li>
+          <li>3️⃣ Launch the app: on first launch, you can register an account and log in</li>
+          <li>4️⃣ Use available functions like scanning files, folders, or enabling real-time protection</li>
+          <li>5️⃣ If a threat is detected, it will be automatically quarantined</li>
+          <li>6️⃣ You can view scan logs and quarantine history</li>
+        </ul>
+        <button id="closeModal" onclick="document.getElementById('modal').style.display = 'none'">Close</button>
+      </div>
+    </div>
+    
     <footer>
       <p>© 2024 SecureShield. All rights reserved.</p>
     </footer>
