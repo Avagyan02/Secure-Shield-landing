@@ -5,7 +5,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app: secure-shield-landing
+    app: secure-shield
   ports:
     - protocol: TCP
       port: 80
