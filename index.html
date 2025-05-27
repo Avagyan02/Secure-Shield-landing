@@ -2,30 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Secure Shield Antivirus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SecureShield Antivirus</title>
   <style>
     body {
-      background: #1e1e1e;
-      color: white;
-      font-family: Segoe UI, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #f1f1f1;
+      font-family: "Segoe UI", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
-      padding: 50px;
     }
-    a.button {
-      background: #0078d4;
-      padding: 15px 25px;
+
+    .container {
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+      color: #00d1b2;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 2em;
+      color: #bbbbbb;
+    }
+
+    .btn {
+      background-color: #00d1b2;
       color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 5px;
       text-decoration: none;
-      border-radius: 8px;
-      font-size: 18px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00a896;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <h1>Secure Shield Antivirus</h1>
-  <p>Protect your PC with our powerful and lightweight antivirus.</p>
-  <a href="https://drive.google.com/uc?export=download&id=1HW03n-3e0ZTmr93Xo225eLLNT5YuKymV" download class="download-button">
-    Download Secure Shield
-  </a>  
+  <div class="container">
+    <h1>SecureShield Antivirus</h1>
+    <p>Advanced protection for your Windows PC.<br/> Real-time scanning. Firewall control. Adware blocking.</p>
+    <a class="btn" href="https://drive.google.com/uc?export=download&id=1HW03n-3e0ZTmr93Xo225eLLNT5YuKymV" download>Download for Windows</a>
+    <footer>
+      <p>© 2024 SecureShield. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
